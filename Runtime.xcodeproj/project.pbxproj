@@ -14,7 +14,32 @@
 		DF33A867234ED2BA0072951C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF33A866234ED2BA0072951C /* Assets.xcassets */; };
 		DF33A86A234ED2BA0072951C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF33A868234ED2BA0072951C /* LaunchScreen.storyboard */; };
 		DF33A86D234ED2BA0072951C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF33A86C234ED2BA0072951C /* main.m */; };
+		DF33A87A234EDE2A0072951C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF33A879234EDE2A0072951C /* main.cpp */; };
+		DF33A885234F10360072951C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF33A884234F10360072951C /* main.m */; };
+		DF33A88B234F1B380072951C /* CFPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = DF33A88A234F1B380072951C /* CFPerson.m */; };
+		DF33A88E234F59660072951C /* CFStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = DF33A88D234F59660072951C /* CFStudent.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DF33A875234EDE2A0072951C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		DF33A880234F10360072951C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		DF33A857234ED2B90072951C /* Runtime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Runtime.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,10 +54,32 @@
 		DF33A869234ED2BA0072951C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF33A86B234ED2BA0072951C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF33A86C234ED2BA0072951C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DF33A877234EDE2A0072951C /* struct */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = struct; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF33A879234EDE2A0072951C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		DF33A882234F10360072951C /* NSObject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NSObject; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF33A884234F10360072951C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DF33A889234F1B380072951C /* CFPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFPerson.h; sourceTree = "<group>"; };
+		DF33A88A234F1B380072951C /* CFPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CFPerson.m; sourceTree = "<group>"; };
+		DF33A88C234F59660072951C /* CFStudent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFStudent.h; sourceTree = "<group>"; };
+		DF33A88D234F59660072951C /* CFStudent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CFStudent.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		DF33A854234ED2B90072951C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF33A874234EDE2A0072951C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF33A87F234F10360072951C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -46,6 +93,8 @@
 			isa = PBXGroup;
 			children = (
 				DF33A859234ED2B90072951C /* Runtime */,
+				DF33A878234EDE2A0072951C /* struct */,
+				DF33A883234F10360072951C /* NSObject */,
 				DF33A858234ED2B90072951C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				DF33A857234ED2B90072951C /* Runtime.app */,
+				DF33A877234EDE2A0072951C /* struct */,
+				DF33A882234F10360072951C /* NSObject */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,6 +127,26 @@
 			path = Runtime;
 			sourceTree = "<group>";
 		};
+		DF33A878234EDE2A0072951C /* struct */ = {
+			isa = PBXGroup;
+			children = (
+				DF33A879234EDE2A0072951C /* main.cpp */,
+			);
+			path = struct;
+			sourceTree = "<group>";
+		};
+		DF33A883234F10360072951C /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				DF33A884234F10360072951C /* main.m */,
+				DF33A88C234F59660072951C /* CFStudent.h */,
+				DF33A88D234F59660072951C /* CFStudent.m */,
+				DF33A889234F1B380072951C /* CFPerson.h */,
+				DF33A88A234F1B380072951C /* CFPerson.m */,
+			);
+			path = NSObject;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -96,6 +167,40 @@
 			productReference = DF33A857234ED2B90072951C /* Runtime.app */;
 			productType = "com.apple.product-type.application";
 		};
+		DF33A876234EDE2A0072951C /* struct */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF33A87B234EDE2A0072951C /* Build configuration list for PBXNativeTarget "struct" */;
+			buildPhases = (
+				DF33A873234EDE2A0072951C /* Sources */,
+				DF33A874234EDE2A0072951C /* Frameworks */,
+				DF33A875234EDE2A0072951C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = struct;
+			productName = struct;
+			productReference = DF33A877234EDE2A0072951C /* struct */;
+			productType = "com.apple.product-type.tool";
+		};
+		DF33A881234F10360072951C /* NSObject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF33A886234F10360072951C /* Build configuration list for PBXNativeTarget "NSObject" */;
+			buildPhases = (
+				DF33A87E234F10360072951C /* Sources */,
+				DF33A87F234F10360072951C /* Frameworks */,
+				DF33A880234F10360072951C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NSObject;
+			productName = NSObject;
+			productReference = DF33A882234F10360072951C /* NSObject */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -106,6 +211,12 @@
 				ORGANIZATIONNAME = 123;
 				TargetAttributes = {
 					DF33A856234ED2B90072951C = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					DF33A876234EDE2A0072951C = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					DF33A881234F10360072951C = {
 						CreatedOnToolsVersion = 11.1;
 					};
 				};
@@ -124,6 +235,8 @@
 			projectRoot = "";
 			targets = (
 				DF33A856234ED2B90072951C /* Runtime */,
+				DF33A876234EDE2A0072951C /* struct */,
+				DF33A881234F10360072951C /* NSObject */,
 			);
 		};
 /* End PBXProject section */
@@ -150,6 +263,24 @@
 				DF33A85C234ED2B90072951C /* AppDelegate.m in Sources */,
 				DF33A86D234ED2BA0072951C /* main.m in Sources */,
 				DF33A85F234ED2B90072951C /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF33A873234EDE2A0072951C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF33A87A234EDE2A0072951C /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF33A87E234F10360072951C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF33A88E234F59660072951C /* CFStudent.m in Sources */,
+				DF33A885234F10360072951C /* main.m in Sources */,
+				DF33A88B234F1B380072951C /* CFPerson.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,7 +340,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -268,7 +399,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -290,6 +421,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7A62PAJV4X;
 				INFOPLIST_FILE = Runtime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -306,6 +438,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7A62PAJV4X;
 				INFOPLIST_FILE = Runtime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -314,6 +447,46 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "-23.Runtime";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DF33A87C234EDE2A0072951C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DF33A87D234EDE2A0072951C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DF33A887234F10360072951C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DF33A888234F10360072951C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -334,6 +507,24 @@
 			buildConfigurations = (
 				DF33A871234ED2BA0072951C /* Debug */,
 				DF33A872234ED2BA0072951C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF33A87B234EDE2A0072951C /* Build configuration list for PBXNativeTarget "struct" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF33A87C234EDE2A0072951C /* Debug */,
+				DF33A87D234EDE2A0072951C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF33A886234F10360072951C /* Build configuration list for PBXNativeTarget "NSObject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF33A887234F10360072951C /* Debug */,
+				DF33A888234F10360072951C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
