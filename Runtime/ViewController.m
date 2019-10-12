@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-
+#import <AFNetworking.h>
+#import <SDWebImage/SDWebImageCompat.h>
 #define PI 3.14159264     //自动识别类型
 
 //宏定义方法；
